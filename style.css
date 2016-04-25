@@ -1,0 +1,481 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1,h2,h3{
+	padding: 0;
+	margin: 0;
+	font-family: Harrington;
+	font-size: 18px;
+}
+
+a{
+	text-decoration: none;
+	color: #FF679A;
+}
+
+body{
+	padding:0;
+	margin:0;
+}
+
+#login,
+#welcome,
+#header,
+#slide-show,
+#menu,
+#content,
+#footer{
+	width:1000px;
+	margin:0 auto;
+}
+/*----------------------------------- Header ------------------------------*/
+#outer-top{
+	background:URL(images/logoatas.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	border-bottom:#EEE 0px solid;
+	background-color:#FFF4F8;
+}
+
+#login{
+	height: 35px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 35px;
+	text-align: center;
+	color: #FF679A;
+	font-weight: bold;
+}
+
+input[type=submit] {
+	padding: 0 18px;
+	height: 29px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	text-shadow: 0 1px #e3f1f1;
+	background: #FF679A;
+	border: 0px solid;
+	border-color: #fff #fff #fff;
+	border-radius: 16px;
+	outline: 0;
+
+  @include box-sizing(content-box); // Firefox sets this to border-box by default
+  @include linear-gradient(top, #edf5f8, #cde5ef);
+  @include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
+
+  &:active {
+    background: #AC64B3;
+    border-color: #fff #fff #fff;
+    @include box-shadow(inset 0 0 3px rgba(black, .2));
+  }
+}
+
+#header{
+	height:150px;
+}
+
+/*----------------------------------- End of Header ------------------------------*/
+
+#menu {
+	height:35px;
+	line-height:35px;
+	padding-left:250px;
+}
+		
+#menu ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+		 
+#menu ul li {
+	float:left;
+	position : relative;
+}
+		
+#menu ul li a {
+	display:block;
+	padding:0 15px;
+	color:#FF0657;
+	text-decoration:none;
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+		
+#menu ul li a:hover {
+	color :#FF679A;
+	width :auto;
+	background-color:transparent;
+}
+		
+/* Menu Dropdown */
+		
+#menu ul li ul {
+	display: none;
+}
+		
+#menu ul li:hover ul {
+	display:block;
+	position: absolute;
+	z-index: 999;
+	border-top: 2px solid #904A95;
+}
+		
+#menu ul li:hover ul li a {
+	display:block;
+	color : #904A95;
+	font-weight:bold;
+	width : 150px;
+	border-bottom: 1px solid #904A95;
+	background-color :#fff;
+}
+		
+#menu ul li:hover ul li a:hover { background-color:#904A95; color : #ffffff;}
+
+#menu-footer {
+	height:35px;
+	line-height:35px;
+	background-color:#F09;
+}
+		
+#menu-footer ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	list-style-position:inherit;
+}
+		 
+#menu-footer ul li {
+	float:left;
+	position : relative;
+}
+		
+#menu-footer ul li a {
+	display:block;
+	padding:0 15px;
+	color:#FC0;
+	text-decoration:none;
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+		
+#menu-footer ul li a:hover {
+	color : red;
+	width : auto;
+	background-color:white;
+}
+		
+/* Menu Dropdown */
+		
+#menu-footer ul li ul {
+	display: none;
+}
+		
+#menu-footer ul li:hover ul {
+	display:block;
+	position: absolute;
+	z-index: 999;
+	border-top: 2px solid #f2f2f2;
+}
+		
+#menu-footer ul li:hover ul li a {
+	display:block;
+	color : #FC0;
+	font-weight:bold;
+	width : 150px;
+	border-bottom: 1px solid #f2f2f2;
+	background-color :#940101;
+}
+		
+#menu-footer ul li:hover ul li a:hover { background-color:#FFF; color : #636363;}
+
+
+/*----------------------------------- Content ------------------------------*/
+
+#outer-content{
+	background-color:#FFF4F8;
+	border-bottom:solid #EEE 0px;
+	padding:0;
+	margin:0;
+}
+
+#content{
+	padding-top:10px;
+	background-color:#fff;
+	min-height:500px;
+	text-align:justify;
+	font-size:14px;
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+}
+
+#bilah-kiri{
+	float: right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	min-height: 400px;
+	margin: 0 0 0 5px;
+	padding-right:5px;
+	width: 200px;
+	text-align: justify;
+	color: #636363;
+}
+
+#bilah-kiri-simple{
+	float: right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin: 0 0 0 5px;
+	padding-right:5px;
+	width: 200px;
+	text-align: justify;
+	color: #636363;
+
+}
+
+#bilah-kiri-simple ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+		 
+#bilah-kiri-simple ul li {
+	float:left;
+	position : relative;
+}
+		
+#bilah-kiri-simple ul li a {
+	display:block;
+	padding:0 5px;
+	color:#FF0657;
+	text-decoration:none;
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+}
+		
+#bilah-kiri-simple ul li a:hover {
+	color : #FF679A;
+	width : auto;
+	background-color:transparent;
+}
+
+#bilah-kiri-simple li {
+    border-bottom: 1px solid #FFF;
+    list-style: none;
+	float:left;
+    padding:0;
+    text-align: justify;
+    width: 200px;
+}
+
+#bilah-kiri-simple li:hover {
+}
+
+#bilah-kiri-simple li a {
+    color: #904A95;
+    display: block;
+    text-decoration: none;
+}
+
+#bilah-kiri-simple li.active {
+    background: #FFF;
+}
+
+#bilah-kiri-simple li.active a {
+    color: #0044a1;
+}
+
+#content-isi{
+	float:left;
+	padding:0;
+	min-height:300px;
+	margin:0;
+	width:785px;
+	margin-left:5px;
+	font-size:14px;
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+}
+
+/*----------------------------------- End of Content ------------------------------*/
+
+/*----------------------------------- Footer ------------------------------*/
+#outer-footer{
+	background:URL(images/bg-bawah.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#FFF4F8;
+}
+
+#footer{
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	line-height: 30px;
+	height: auto;
+	text-align: right;
+	padding-left:70px;
+}
+#powered{
+	font-family:Arial, Tahoma, Helvetica, sans-serif;
+	padding-left:50;
+	font-size: 10px;
+	color: #904A95;
+	line-height: 30px;
+	height: auto;
+	text-align:center;
+}
+
+/*----------------------------------- Other ------------------------------*/
+.clear{
+	clear:both;
+}
+
+#main #slider1         { width: 356px; height: 208px; list-style: none; float:left }
+
+#trans img {
+    opacity:0.7;
+}
+#trans img:hover { 
+    opacity:1;
+}
+
+.table-scrool{
+	overflow:auto;
+	width:200px;
+	height:250px;
+}
+
+.table-scrool1{
+	overflow:auto;
+	width:740px;
+	height:250px;
+	-webkit-border-radius:3px;
+  	-moz-border-radius:3px;
+  	border-radius:3px;
+}
+
+.tabel1{
+	-webkit-border-radius:3px;
+  	-moz-border-radius:3px;
+  	border-radius:3px;
+}
+
+.tabel2, .tabel2 td, .tabel2 th{
+	border-collapse:collapse;
+	border:solid 1px #999;
+}
+
+#bttn{
+	background-color:#FF679A;
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+	border:none;
+	height:35px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:700;
+	color:#FFF;
+}
+
+#bttn:hover{
+	cursor:pointer;
+	background-color:#FF8AB0;
+	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+	border:none;
+	height:35px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:700;
+	color:#fff;
+}
+
+.tdat{
+	-webkit-border-radius-topleft:10px;-moz-border-radius-topleft:10px; border-top-left-radius:10px;
+	-webkit-border-radius-topright:10px;-moz-border-radius-topright:10px; border-top-right-radius:10px;
+	-webkit-border-radius-bottomleft:10px;-moz-border-radius-bottomleft:10px; border-bottom-left-radius:10px;
+	-webkit-border-radius-bottomright:10px;-moz-border-radius-bottomright:10px; border-bottom-right-radius:10px;
+	background-color:#904A95;
+	line-height:35px;
+	text-align:center;
+}
+
+.tdbwh{
+	-webkit-border-radius:20px;-moz-border-radius-bottomright:20px; border-bottom-right-radius:20px;
+	-webkit-border-radius-bottomleft:20px;-moz-border-radius-bottomleft:20px; border-bottom-left-radius:20px;
+	background-color:#904A95;
+	text-align:center;
+}
+
+.ahref{
+	
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FF0657;
+	padding-left:0px;
+}
+
+.ahref:hover{
+	text-decoration:none;
+	color:#FF679A;
+}
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#636363;}
+#colorbox{outline:0;}
+    #cboxContent{margin-top:20px;background:#636363;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{border:5px solid #636363; background:#fff;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+        
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}
+
+.container { width: 785px;}
+.container .columns,
+.container .column { margin: 0; }
+.container .sixteen.columns{ width: 785px; }
+#slider {
+	padding : 0;
+	margin:0 auto;
+}
