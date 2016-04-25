@@ -1,0 +1,15 @@
+Sistem Informasi Penjualan ini sebenarnya Program Skripsi yang pernah saya buat untuk mahasiswa D3 BSI
+Sistem ini juga sudah dipakai oleh 3 Mahasiswa hanya dengan merubah templatenya.
+
+Bagi teman-teman sekalian yang berniat untuk memodifikasi atau menggunakan program ini untuk skripsi silahkan di download
+sistem ini masih menggunakan MySQL belum di convert ke MySQLi (silahkan di convert sendiri)
+
+Untuk demo bisa visit Link dibawah ini
+http://dsainweb.com/demo-website/LennyShop
+
+Untuk Admin Dashboard silahkan visit link dibawah ini
+http://dsainweb.com/demo-website/LennyShop/admin/
+
+Dengan
+Username : demo@gmail.com
+Password : demoadmin
